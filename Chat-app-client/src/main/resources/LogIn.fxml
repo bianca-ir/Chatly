@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="359.0" style="-fx-background-color: #A5A48D;">
+         <children>
+            <ImageView fitHeight="172.0" fitWidth="146.0" layoutX="64.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../java/images/chat.png" />
+               </image></ImageView>
+            <Label layoutX="80.0" layoutY="242.0" prefHeight="86.0" prefWidth="114.0" text="Chatly" textFill="#f1f1f1">
+               <font>
+                  <Font name="Berlin Sans FB" size="41.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="400.0" prefWidth="410.0" style="-fx-background-color: F1F1F1;">
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <children>
+            <ImageView fitHeight="86.0" fitWidth="86.0" layoutX="127.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../java/images/lock.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="23.0" layoutY="173.0" text="Username">
+               <font>
+                  <Font name="SansSerif Regular" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="225.0" prefHeight="26.0" prefWidth="98.0" text="Password">
+               <font>
+                  <Font name="SansSerif Regular" size="21.0" />
+               </font>
+            </Label>
+            <TextField fx:id="tf_username" layoutX="138.0" layoutY="173.0" prefHeight="28.0" prefWidth="149.0">
+               <font>
+                  <Font name="Corbel Light" size="12.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tf_password" layoutX="138.0" layoutY="225.0" prefHeight="28.0" prefWidth="149.0" />
+            <Button fx:id="button_login" layoutX="79.0" layoutY="275.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="182.0" style="-fx-background-color: #2E492F;" text="Log in" textFill="#f8efef">
+               <font>
+                  <Font name="SansSerif Regular" size="18.0" />
+               </font>
+            </Button>
+            <Label layoutX="68.0" layoutY="332.0" prefHeight="18.0" prefWidth="106.0" text="Not a member? ">
+               <font>
+                  <Font name="SansSerif Regular" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="button_signup" layoutX="181.0" layoutY="328.0" mnemonicParsing="false" prefHeight="14.0" prefWidth="106.0" style="-fx-background-color: #2E492F;" text="Sign up!" textFill="#fdfafa">
+               <font>
+                  <Font name="SansSerif Regular" size="13.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</HBox>

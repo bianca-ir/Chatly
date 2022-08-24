@@ -1,0 +1,14 @@
+auth/SignUpController.java
+ auth.SignUpController
+auth/LogInController.java
+ auth.LogInController
+MainFX.java
+ MainFX
+chat/Client.java
+ chat.Client
+ chat.Client$1
+chat/ClientController.java
+ chat.ClientController
+ chat.ClientController$1
+ chat.ClientController$2
+ chat.ClientController$3
