@@ -1,10 +1,20 @@
-MainFX.java
- MainFX
 chat/ServerController.java
  chat.ServerController
  chat.ServerController$1
  chat.ServerController$2
  chat.ServerController$3
+auth/LogInController.java
+ auth.LogInController
+ auth.LogInController$1
+ auth.LogInController$2
 chat/Server.java
  chat.Server
  chat.Server$1
+auth/SignUpController.java
+ auth.SignUpController
+ auth.SignUpController$1
+ auth.SignUpController$2
+MainFX.java
+ MainFX
+auth/DBUtils.java
+ auth.DBUtils

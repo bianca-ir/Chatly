@@ -11,6 +11,7 @@ import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
@@ -39,6 +40,8 @@ public class ServerController implements Initializable {
     private VBox vbox_messages;
     @FXML
     private ScrollPane sp_main;
+    @FXML
+    private Label label_welcome;
 
     private Server server;
 
@@ -51,6 +54,7 @@ public class ServerController implements Initializable {
             System.out.println("Error instantiating server. ");
         }
 
+
         // Update the scroll pane whenever a new message appears.
 
         vbox_messages.heightProperty().addListener(new ChangeListener<Number>() {
@@ -61,12 +65,18 @@ public class ServerController implements Initializable {
         });
 
 
+
+
         server.receiveMessageFromClient(vbox_messages);
+
+
 
 
         /**
          * When the send button is pressed, the GUI is updated with the new message and the string message is sent to the client.
          */
+
+
 
         button_send.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -125,10 +135,12 @@ public class ServerController implements Initializable {
 
         Text text = new Text(messageFromClient);
         TextFlow textFlow = new TextFlow(text);
-        textFlow.setStyle("-fx-background-radius: 20px; -fx-background-color:  #b0bab0; -fx-color: red");
+        textFlow.setStyle("-fx-background-radius: 20px; -fx-background-color:  #b0bab0; -fx-color: green");
         textFlow.setPadding(new Insets(5,10,5,10));
 
         hBox.getChildren().add(textFlow);
+
+
 
         // JavaFX is single-threaded, but there's a workaround with Platform class
         Platform.runLater(new Runnable() {
@@ -140,6 +152,18 @@ public class ServerController implements Initializable {
         });
 
 
+
+
+
     }
+
+
+
+    public void setUserInformation(String username) {
+        label_welcome.setText("Welcome, " + username + "!");
+    }
+
+
+
 
 }

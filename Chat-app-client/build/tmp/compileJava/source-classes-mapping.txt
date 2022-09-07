@@ -1,9 +1,3 @@
-auth/SignUpController.java
- auth.SignUpController
-auth/LogInController.java
- auth.LogInController
-MainFX.java
- MainFX
 chat/Client.java
  chat.Client
  chat.Client$1
@@ -12,3 +6,15 @@ chat/ClientController.java
  chat.ClientController$1
  chat.ClientController$2
  chat.ClientController$3
+auth/LogInController.java
+ auth.LogInController
+ auth.LogInController$1
+ auth.LogInController$2
+auth/SignUpController.java
+ auth.SignUpController
+ auth.SignUpController$1
+ auth.SignUpController$2
+MainFX.java
+ MainFX
+auth/DBUtils.java
+ auth.DBUtils

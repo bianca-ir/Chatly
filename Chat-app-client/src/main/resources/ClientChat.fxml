@@ -15,7 +15,7 @@
         </ScrollPane>
 
 
-        <Label layoutX="203.0" layoutY="35.0" prefHeight="27.0" prefWidth="71.0" text="Client">
+        <Label fx:id="label_welcome" layoutX="29.0" layoutY="33.0" prefHeight="27.0" prefWidth="418.0" text="Welcome!">
             <font>
                 <Font name="SansSerif Bold" size="24.0" />
             </font>

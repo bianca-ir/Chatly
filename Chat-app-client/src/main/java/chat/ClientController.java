@@ -10,6 +10,7 @@ import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.control.TextField;
 import javafx.scene.input.KeyCode;
@@ -37,6 +38,8 @@ public class ClientController implements Initializable {
     private VBox vbox_messages;
     @FXML
     private ScrollPane sp_main;
+    @FXML
+    private Label label_welcome;
 
     private Client client;
 
@@ -126,6 +129,10 @@ public class ClientController implements Initializable {
             }
         });
 
+    }
+
+    public void setUserInformation(String username) {
+        label_welcome.setText("Welcome, " + username + "!");
     }
 
 }

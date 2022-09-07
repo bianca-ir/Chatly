@@ -6,13 +6,13 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="auth.LogInController">
    <children>
       <AnchorPane prefHeight="400.0" prefWidth="359.0" style="-fx-background-color: #A5A48D;">
          <children>
-            <ImageView fitHeight="172.0" fitWidth="146.0" layoutX="64.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="chat_img" fitHeight="172.0" fitWidth="146.0" layoutX="64.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../java/images/chat.png" />
+                  <Image url="@images/chat.png" />
                </image></ImageView>
             <Label layoutX="80.0" layoutY="242.0" prefHeight="86.0" prefWidth="114.0" text="Chatly" textFill="#f1f1f1">
                <font>
@@ -26,9 +26,9 @@
             <Insets />
          </HBox.margin>
          <children>
-            <ImageView fitHeight="86.0" fitWidth="86.0" layoutX="127.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fx:id="lock_img" fitHeight="86.0" fitWidth="86.0" layoutX="127.0" layoutY="53.0" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../java/images/lock.png" />
+                  <Image url="@images/lock.png" />
                </image>
             </ImageView>
             <Label layoutX="23.0" layoutY="173.0" text="Username">

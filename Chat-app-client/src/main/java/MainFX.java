@@ -14,14 +14,14 @@ public class MainFX extends Application {
 
     @Override
     public void start(Stage primaryStage) throws Exception {
-    //    Parent root = FXMLLoader.load(getClass().getResource("ClientChat.fxml"));
+
         try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("ClientChat.fxml"));
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("LogIn.fxml"));
             Parent root = loader.load();
-            Scene scene = new Scene(root, 478, 396);
+            Scene scene = new Scene(root, 600, 400);
 
             primaryStage.setScene(scene);
-            primaryStage.setTitle("Client chat");
+            primaryStage.setTitle("Log in!");
             primaryStage.show();
         } catch (Exception e) {
             Alert alert=new Alert(Alert.AlertType.ERROR);
