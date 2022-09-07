@@ -64,19 +64,12 @@ public class ServerController implements Initializable {
             }
         });
 
-
-
-
         server.receiveMessageFromClient(vbox_messages);
-
-
 
 
         /**
          * When the send button is pressed, the GUI is updated with the new message and the string message is sent to the client.
          */
-
-
 
         button_send.setOnAction(new EventHandler<ActionEvent>() {
             @Override
@@ -108,19 +101,12 @@ public class ServerController implements Initializable {
 
                     tf_message.clear();
 
-
                 }
             }
 
-
         });
 
-
-
-
-
     }
-
 
     /**
      * Updates GUI with the client message.

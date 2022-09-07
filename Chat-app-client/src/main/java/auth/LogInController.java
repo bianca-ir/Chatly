@@ -50,12 +50,6 @@ public class LogInController implements Initializable {
                 });
 
 
-
-
-
-
-        // switching to Sign Up page
-
         button_signup.setOnAction(new EventHandler<ActionEvent>() {
             @Override
             public void handle(ActionEvent event) {

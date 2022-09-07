@@ -12,7 +12,7 @@ import java.net.Socket;
 
 public class Server {
     private ServerSocket serverSocket;
-    private Socket socket; // client socket
+    private Socket socket;
     // using buffers for efficiency
     private BufferedReader bufferedReader;
     private BufferedWriter bufferedWriter;

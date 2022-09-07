@@ -30,9 +30,5 @@ public class MainFX extends Application {
             alert.showAndWait();
         }
 
-
-
-
-
     }
 }

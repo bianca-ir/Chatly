@@ -37,9 +37,6 @@ public class LogInController implements Initializable {
     @Override
     public void initialize(URL location, ResourceBundle resources) {
 
-
-
-
                 btn_login.setOnAction(new EventHandler<ActionEvent>() {
                     @Override
                     public void handle(ActionEvent event) {
@@ -50,13 +47,6 @@ public class LogInController implements Initializable {
 
                     }
                 });
-
-
-
-
-
-
-        // switching to Sign Up page
 
         button_signup.setOnAction(new EventHandler<ActionEvent>() {
             @Override
